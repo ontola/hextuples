@@ -3,7 +3,7 @@
 _This document serves as a work in progress / draft specification_
 
 HexTuples is an [NDJSON](http://ndjson.org/) (Newline Delimited JSON) based RDF serialization format.
-It is desgined to achieve the best possible performance in a JS context (i.e. the browser).
+It is desgined to support streaming parsing and provide great performance in a JS context (i.e. the browser).
 
 
 ## Serializing
