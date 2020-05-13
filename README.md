@@ -11,6 +11,8 @@ It is desgined to achieve the best possible performance in a JS context (i.e. th
 - Each array MUST consist of six strings.
 - Each array represents one RDF statement / quad / triple
 - The six strings in each array respectively represent  `subject`, `predicate`, `object`, `datatype`, `lang` and `graph`.
+- The last three fields are only used in Literal values.
+- When expressing an Object that is a NamedNode, use this string as the datatype: "http://www.w3.org/1999/02/22-rdf-syntax-ns#namedNode"
 - When a field has no value, use an empty string: `""`
 
 ## Example
