@@ -11,7 +11,7 @@ It is desgined to support streaming parsing and provide great performance in a J
 - Each array MUST consist of six strings.
 - Each array represents one RDF statement / quad / triple
 - The six strings in each array respectively represent  `subject`, `predicate`, `object`, `datatype`, `lang` and `graph`.
-- The last three fields are only used in Literal values.
+- The `datatype` and `lang` fields are only used when the `object` represents a Literal value (i.e. not a URI, but a string / date / something else).
 - When expressing an Object that is a NamedNode, use this string as the datatype: "http://www.w3.org/1999/02/22-rdf-syntax-ns#namedNode" ([discussion](https://github.com/ontola/hextuples/issues/1))
 - When expressing an Object that is a BlankNode, use this string as the datatype: "http://www.w3.org/1999/02/22-rdf-syntax-ns#blankNode"
 - The `graph` field does not support blank nodes. ([discussion](https://github.com/ontola/hextuples/issues/2))
