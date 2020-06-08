@@ -17,7 +17,7 @@ HexTuples consist of six fields: `subject`, `predicate`, `value`, `datatype`, `l
 
 Let's encode the following sentence in HexTuples:
 
-_Tim Berners-Lee, the director of W3C, is born in London on the 8th of juni, 1955._
+_Tim Berners-Lee, the director of W3C, is born in London on the 8th of June, 1955._
 
 | Subject    | Predicate     | Value | DataType | Language | Graph |
 |---------|----------------|------------|-----|-----|----|
@@ -27,7 +27,7 @@ _Tim Berners-Lee, the director of W3C, is born in London on the 8th of juni, 195
 
 ### URI
 
-URI stands for [Uniform Resource Identifier](https://tools.ietf.org/html/rfc3986).
+URI stands for [Uniform Resource Identifier, specified in RDF 3986](https://tools.ietf.org/html/rfc3986).
 The best known type of URI is the URL.
 Although it is currently best practice to use mostly HTTPS URLs as URIs, HexTuples works with any type of URI.
 
