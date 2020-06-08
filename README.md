@@ -110,7 +110,7 @@ Expresed in HexTuples:
 ["https://www.w3.org/People/Berners-Lee/", "http://schema.org/birthPlace", "http://dbpedia.org/resource/London", "http://www.w3.org/1999/02/22-rdf-syntax-ns#namedNode", "", ""]
 ```
 
-## Parsing HexTuples
+### Parsing HexTuples-NDJSON
 
 We'll open source a proper parser soon, but this Typescript code should give you some idea of how to write a parser for HexTuples.
 
