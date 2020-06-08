@@ -33,34 +33,34 @@ Although it is currently best practice to use mostly HTTPS URLs as URIs, HexTupl
 
 ### Subject
 
-The _subject_ is identifier of the thing the statement is about.
-This field is required.
-It MUST be a URI.
+- The _subject_ is identifier of the thing the statement is about.
+- This field is required.
+- It MUST be a URI.
 
 ### Predicate
 
-The _predicate_ describes the abstract property of the statement.
-This field is required.
-It MUST be a URI.
+- The _predicate_ describes the abstract property of the statement.
+- This field is required.
+- It MUST be a URI.
 
 ### Value
 
-The _value_ contains the object of the HexTuple.
-This field is required.
-It can be any datatype, specified in the `datatype` of the HexTuple.
+- The _value_ contains the object of the HexTuple.
+- This field is required.
+- It can be any datatype, specified in the `datatype` of the HexTuple.
 
 ### Datatype
 
-The _datatype_ contains the object of the HexTuple.
-This field is optional.
-It MUST be a URI or an empty string.
-When the Datatype is an empty string, HexTuples assumes the dataype of the value is URI.
+- The _datatype_ contains the object of the HexTuple.
+- This field is optional.
+- It MUST be a URI or an empty string.
+- When the Datatype is an empty string, HexTuples assumes the dataype of the value is URI.
 
 ### Language
 
-The _datatype_ contains the object of the HexTuple.
-This field is optional.
-It MUST be an [RFC 3066 language tag](https://tools.ietf.org/html/rfc3066) or an empty string.
+- The _datatype_ contains the object of the HexTuple.
+- This field is optional.
+- It MUST be an [RFC 3066 language tag](https://tools.ietf.org/html/rfc3066) or an empty string.
 
 ## Relation to RDF
 
