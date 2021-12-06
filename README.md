@@ -113,7 +113,9 @@ Expresed in HexTuples:
 
 ### Parsing HexTuples-NDJSON
 
-We'll open source a proper parser soon, but this Typescript code should give you some idea of how to write a parser for HexTuples.
+[Here's a Javascript HexTuples-NDJSON parser](https://github.com/ontola/hextuples-parser).
+
+This Typescript code should give you some idea of how to write a parser for HexTuples.
 
 ```ts
 const object = (value: string, datatype: string, language: string): SomeTerm => {
