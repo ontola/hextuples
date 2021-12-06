@@ -54,8 +54,8 @@ Although it is currently best practice to use mostly HTTPS URLs as URIs, HexTupl
 - The _datatype_ contains the object of the HexTuple.
 - This field is optional.
 - It MUST be a URI or an empty string.
-- When the Datatype is a NamedNode, use: `http://www.w3.org/1999/02/22-rdf-syntax-ns#namedNode`
-- When the Datatype is a BlankNode, use: `http://www.w3.org/1999/02/22-rdf-syntax-ns#blankNode`
+- When the Datatype is a NamedNode, use: `globalId`
+- When the Datatype is a BlankNode, use: `localId`
 
 ### Language
 
