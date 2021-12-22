@@ -147,3 +147,11 @@ HexTuples is designed by [Thom van Kalkeren](https://github.com/fletcher91/) (CT
 - NDJSON enables **streaming parsing** as well, which gives it another performance boost.
 - Some JS RDF libraries ([link-lib](https://github.com/fletcher91/link-lib/), [link-redux](https://github.com/fletcher91/link-redux/)) have an internal RDF graph model which uses these HexTuples arrays as well, which means that there is minimal mapping cost when parsing Hex-Tuple statements.
 This format is especially suitable for real front-end applications that use dynamic RDF data.
+
+## Implementations
+
+* [RDFlib](https://pypi.org/project/rdflib/)
+    * RDFLib is a pure Python package for working with RDF. 
+    * It supports parsing and serliazing RDF as HexTuples
+    * Internally (in Python objects), RDF parsed from HexTuples data is represented in a _Conjunctive Graph_, that is a multi-graph object
+    * HexTuples files must end in the file extension `.hext` for RDFlib to auto-recognise the format although files with any ending can be used if the format is given (`format=hext`)
