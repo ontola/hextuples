@@ -148,6 +148,8 @@ const lineToQuad = (h: string[]) => quad(
 * Internally (in Python objects), RDF parsed from HexTuples data is represented in a _Conjunctive Graph_, that is a multi-graph object
 * HexTuples files must end in the file extension `.hext` for RDFlib to auto-recognise the format although files with any ending can be used if the format is given (`format=hext`)
 
+An RDF format conversion tool using RDFLib that can convert from/to HexTuples is online at <http://rdftools.surroundaustralia.com/convert>.
+
 ## Motivation for HexTuples-NDJSON
 
 HexTuples was designed by [Thom van Kalkeren](https://github.com/fletcher91/) (CTO of Ontola) because he noticed that parsing / serialization was unnecessarily costly in our full-RDF stack, even when using the relatively performant `n-quads` format.
