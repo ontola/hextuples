@@ -111,9 +111,11 @@ Expresed in HexTuples:
 ["https://www.w3.org/People/Berners-Lee/", "http://schema.org/birthPlace", "http://dbpedia.org/resource/London", "http://www.w3.org/1999/02/22-rdf-syntax-ns#namedNode", "", ""]
 ```
 
-### Parsing HexTuples-NDJSON
+## Implementations
 
-[Here's a Javascript HexTuples-NDJSON parser](https://github.com/ontola/hextuples-parser).
+### Ontola TypeScript HexTuples Parser
+
+* <https://github.com/ontola/hextuples-parser>
 
 This Typescript code should give you some idea of how to write a parser for HexTuples.
 
@@ -138,9 +140,19 @@ const lineToQuad = (h: string[]) => quad(
 );
 ```
 
-### Motivation for HexTuples-NDJSON
+### Python RDFlib
 
-HexTuples is designed by [Thom van Kalkeren](https://github.com/fletcher91/) (CTO of Ontola) because he noticed that parsing / serialization was unnecessarily costly in our full-RDF stack, even when using the relatively performant `n-quads` format.
+* <https://pypi.org/project/rdflib/>
+* RDFLib is a pure Python package for working with RDF. 
+* It supports parsing and serliazing RDF as HexTuples
+* Internally (in Python objects), RDF parsed from HexTuples data is represented in a _Conjunctive Graph_, that is a multi-graph object
+* HexTuples files must end in the file extension `.hext` for RDFlib to auto-recognise the format although files with any ending can be used if the format is given (`format=hext`)
+
+An RDF format conversion tool using RDFLib that can convert from/to HexTuples is online at <http://rdftools.surroundaustralia.com/convert>.
+
+## Motivation for HexTuples-NDJSON
+
+HexTuples was designed by [Thom van Kalkeren](https://github.com/fletcher91/) (CTO of Ontola) because he noticed that parsing / serialization was unnecessarily costly in our full-RDF stack, even when using the relatively performant `n-quads` format.
 
 - Since HexTuples is serialized in NDJSON, it benefits from the [highly optimised JSON parsers in browsers](https://v8.dev/blog/cost-of-javascript-2019#json).
 - It uses NDJSON instead of regular JSON because it makes it easier to parse **concatenated responses** (multiple root objects in one document).
