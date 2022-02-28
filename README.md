@@ -2,7 +2,7 @@
 
 _Status: draft_
 
-_Version: 0.2.0_
+_Version: 0.3.0_
 
 HexTuples is a simple datamodel for dealing with linked data.
 This document both describes the model and concepts of HexTuples, as well as the (at this moment only) serialization format: HexTuples-NDJSON.
