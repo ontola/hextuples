@@ -123,9 +123,9 @@ This Typescript code should give you some idea of how to write a parser for HexT
 const object = (value: string, datatype: string, language: string): SomeTerm => {
   if (language) {
     return literal(value, language);
-  } else if (datatype === 'http://www.w3.org/1999/02/22-rdf-syntax-ns#namedNode') {
+  } else if (datatype === 'globalId') {
     return namedNode(value);
-  } else if (datatype === 'http://www.w3.org/1999/02/22-rdf-syntax-ns#blankNode') {
+  } else if (datatype === 'localId') {
     return blankNode(value);
   }
 
