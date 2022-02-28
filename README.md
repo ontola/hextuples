@@ -152,7 +152,7 @@ An RDF format conversion tool using RDFLib that can convert from/to HexTuples is
 
 ## Motivation for HexTuples-NDJSON
 
-HexTuples was designed by [Thom van Kalkeren](https://github.com/fletcher91/) (CTO of Ontola) because he noticed that parsing / serialization was unnecessarily costly in our full-RDF stack, even when using the relatively performant `n-quads` format.
+HexTuples was designed by [Thom van Kalkeren](https://github.com/fletcher91/) (CTO of Ontola) because he noticed that parsing / serialization was unnecessarily costly in our [full-RDF stack](https://ontola.io/blog/full-stack-linked-data/), even when using the relatively performant `n-quads` format.
 
 - Since HexTuples is serialized in NDJSON, it benefits from the [highly optimised JSON parsers in browsers](https://v8.dev/blog/cost-of-javascript-2019#json).
 - It uses NDJSON instead of regular JSON because it makes it easier to parse **concatenated responses** (multiple root objects in one document).
