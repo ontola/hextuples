@@ -24,7 +24,7 @@ _Tim Berners-Lee, the director of W3C, is born in London on the 8th of June, 195
 |---------|----------------|------------|-----|-----|----|
 | [Tim](https://www.w3.org/People/Berners-Lee/)     |[birthPlace](http://schema.org/birthPlace) | [London](http://dbpedia.org/resource/London)     | | |
 | [Tim](https://www.w3.org/People/Berners-Lee/)     |[birthDate](http://schema.org/birthDate) | 1955-06-08     | [xsd:date](http://www.w3.org/2001/XMLSchema#date) | | 
-| [Tim](https://www.w3.org/People/Berners-Lee/)     |[jobTitle](http://schema.org/jobTitle) | Director of W3C  | [xsd:string](http://www.w3.org/2001/XMLSchema#string) | en-US | 
+| [Tim](https://www.w3.org/People/Berners-Lee/)     |[jobTitle](http://schema.org/jobTitle) | Director of W3C  | [rdf:langString](http://www.w3.org/2000/01/rdf-schema#langString) | en-US | 
 
 ### URI
 
